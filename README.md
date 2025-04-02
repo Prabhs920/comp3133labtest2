@@ -1,59 +1,79 @@
-# 101415063LabTest2Comp3133
+# 🚀 SpaceX Mission List
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+## 📌 Project Overview
+This project is an Angular-based web application that fetches and displays information about SpaceX missions using the SpaceX API. Users can filter missions by launch year, success status, and landing success.
 
-## Development server
+## 🛠️ Tech Stack
+- **Frontend:** Angular, TypeScript, Angular Material
+- **Backend API:** [SpaceX API v3](https://api.spacexdata.com/v3/launches)
+- **Styling:** CSS, Angular Material
+- **Deployment:** Vercel
 
-To start a local development server, run:
+## 📷 Demo
+🔗 **Live App:** [SpaceX Mission List](https://comp3133-lab-test2-spacex.vercel.app/)
 
-```bash
-ng serve
+## 🚀 Features
+- Display a list of SpaceX missions with mission patches.
+- Filter missions by launch year, success status, and landing success.
+- Click on a mission to view more details.
+- Responsive UI with Angular Material.
+
+## 📦 Installation
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/spacex-mission-list.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd spacex-mission-list
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Run the application locally:
+   ```sh
+   ng serve
+   ```
+5. Open the browser and go to:
+   ```
+   http://localhost:4200
+   ```
+
+## 🔗 API Usage
+This project fetches SpaceX mission data from:
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+https://api.spacexdata.com/v3/launches
 ```
+Each mission contains:
+- `mission_name` (string)
+- `launch_year` (string)
+- `rocket.rocket_name` (string)
+- `links.mission_patch_small` (URL to mission patch image)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Deployment
+This project is deployed on **Vercel**:
+1. Install Vercel CLI:
+   ```sh
+   npm install -g vercel
+   ```
+2. Deploy the project:
+   ```sh
+   vercel
+   ```
 
-```bash
-ng generate --help
-```
+## ❓ Troubleshooting
+### **Images Not Loading?**
+- Ensure the API response contains `mission_patch_small`.
+- Check console errors in DevTools (F12 → Console).
+- Try using SpaceX API v5 for more updated data.
 
-## Building
+### **CORS Issues?**
+- If images fail to load due to CORS restrictions, use a proxy server or download images locally.
 
-To build the project run:
+## 👨‍💻 Author
+**Prabhnoor Singh**  
+[GitHub](https://github.com/Prabhs920) | [LinkedIn](#)
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📜 License
+This project is open-source and available under the MIT License.
