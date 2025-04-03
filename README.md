@@ -99,7 +99,7 @@ Then open http://localhost:4200/ in your browser.---
 
 ## 📬 Submission Info
 
-- ✅ GitHub Repo: https://github.com/samramantej/comp3133-labtest2
+- ✅ GitHub Repo: https://github.com/Prabhs920/comp3133labtest2
 - ✅ Deployed App: [https://comp3133-labtest2-dusky.vercel.app](https://comp3133-labtest2-dusky.vercel.app)
 - ✅ Screenshots: included in this README
 
