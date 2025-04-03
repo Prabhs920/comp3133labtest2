@@ -3,7 +3,7 @@
 *Author:* Prabhnoor Singh
 *Student ID:* 101415063
 
-*Live Demo:* [https://comp3133-labtest2-dusky.vercel.app](https://comp3133-labtest2-dusky.vercel.app)
+*Live Demo:* [https://comp3133labtest2.vercel.app/](https://comp3133labtest2.vercel.app/)
 
 ---
 
