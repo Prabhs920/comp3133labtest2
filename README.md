@@ -1,79 +1,106 @@
-# 🚀 SpaceX Mission List
+# 🚀 SpaceX Mission Tracker
 
-## 📌 Project Overview
-This project is an Angular-based web application that fetches and displays information about SpaceX missions using the SpaceX API. Users can filter missions by launch year, success status, and landing success.
+*Author:* Prabhnoor Singh
+*Student ID:* 101415063
+
+*Live Demo:* [https://comp3133-labtest2-dusky.vercel.app](https://comp3133-labtest2-dusky.vercel.app)
+
+---
+
+## 🧾 Project Overview
+
+This Angular application fetches and displays SpaceX mission data using the public SpaceX REST API. It is built as part of *COMP3133 – Lab Test 2*.
+
+Users can:
+- View a list of all missions
+- Filter by launch year, launch success, and landing success
+- Click a mission to view full details
+
+---
+
+## 🖼️ Screenshots
+
+### ✅ Home Page + Filter
+![image]!![Screenshot 2025-04-02 165520](https://github.com/user-attachments/assets/0a75cb17-d549-4d7a-94cc-e4ffdabdea22)
+
+
+
+
+### ✅ Filtered Mission List
+![image]![Screenshot 2025-04-02 165317](https://github.com/user-attachments/assets/fc709a90-45d1-4b2e-ab0a-83a2f2ffbe35)
+
+
+### ✅ Mission Details
+![image]![Screenshot 2025-04-02 165456](https://github.com/user-attachments/assets/d13d9bf9-d28c-4fd4-9e8c-abd255df7efb)
+
+![image]![Screenshot 2025-04-02 165334](https://github.com/user-attachments/assets/4417c456-f7bd-44e5-81d3-153577291e6f)
+
+
+---
 
 ## 🛠️ Tech Stack
-- **Frontend:** Angular, TypeScript, Angular Material
-- **Backend API:** [SpaceX API v3](https://api.spacexdata.com/v3/launches)
-- **Styling:** CSS, Angular Material
-- **Deployment:** Vercel
 
-## 📷 Demo
-🔗 **Live App:** [SpaceX Mission List](https://comp3133-lab-test2-spacex.vercel.app/)
+- Angular (Standalone Components)
+- Angular Material
+- SpaceX REST API v3
+- Vercel (Hosting)
+- GitHub (Version control)
 
-## 🚀 Features
-- Display a list of SpaceX missions with mission patches.
-- Filter missions by launch year, success status, and landing success.
-- Click on a mission to view more details.
-- Responsive UI with Angular Material.
+---
 
-## 📦 Installation
+## 📦 How to Run Locally
+
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/spacex-mission-list.git
-   ```
-2. Navigate to the project folder:
-   ```sh
-   cd spacex-mission-list
-   ```
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-4. Run the application locally:
-   ```sh
-   ng serve
-   ```
-5. Open the browser and go to:
-   ```
-   http://localhost:4200
-   ```
 
-## 🔗 API Usage
-This project fetches SpaceX mission data from:
-```
-https://api.spacexdata.com/v3/launches
-```
-Each mission contains:
-- `mission_name` (string)
-- `launch_year` (string)
-- `rocket.rocket_name` (string)
-- `links.mission_patch_small` (URL to mission patch image)
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
 
-## 🛠️ Deployment
-This project is deployed on **Vercel**:
-1. Install Vercel CLI:
-   ```sh
-   npm install -g vercel
-   ```
-2. Deploy the project:
-   ```sh
-   vercel
-   ```
 
-## ❓ Troubleshooting
-### **Images Not Loading?**
-- Ensure the API response contains `mission_patch_small`.
-- Check console errors in DevTools (F12 → Console).
-- Try using SpaceX API v5 for more updated data.
+2. Install dependencies:
 
-### **CORS Issues?**
-- If images fail to load due to CORS restrictions, use a proxy server or download images locally.
+npm install
 
-## 👨‍💻 Author
-**Prabhnoor Singh**  
-[GitHub](https://github.com/Prabhs920) | [LinkedIn](#)
 
-## 📜 License
-This project is open-source and available under the MIT License.
+3. Run the app:
+
+ng serve
+
+
+Then open http://localhost:4200/ in your browser.---
+
+## 📂 Project Structure Highlights
+
+
+/src
+  /app
+    /missionlist         → Lists all missions
+    /missionfilter       → Filters for year, launch, landing
+    /missiondetails      → Individual mission details
+    /network             → API service for SpaceX data
+    /models              → Mission data interface
+
+
+---
+
+## ✅ Features
+
+- Angular standalone app setup
+- Angular Material cards and spinners
+- SpaceX REST API integration
+- Filter functionality:
+  - By launch year
+  - Launch success (radio)
+  - Landing success (radio)
+- Clickable mission cards → routed mission detail view
+- Responsive design
+- Deployed via Vercel
+
+---
+
+## 📬 Submission Info
+
+- ✅ GitHub Repo: https://github.com/samramantej/comp3133-labtest2
+- ✅ Deployed App: [https://comp3133-labtest2-dusky.vercel.app](https://comp3133-labtest2-dusky.vercel.app)
+- ✅ Screenshots: included in this README
+
+---
